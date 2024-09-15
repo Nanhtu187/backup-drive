@@ -5,13 +5,12 @@ from create_instance import create_instance
 # Configure logging
 logging.basicConfig(filename='error.log', level=logging.ERROR)
 
-SOURCE_FOLDER_ID = "1saTWxTSFbtkFEAbeYPsuQCNaH_AkZq1v"
-DESTINATION_FOLDER_ID = "1xGa0CusuRr_7Ta7Et6qLGCV-0LTZUtq5"
-# DESTINATION_FOLDER_ID = "15NjBZwVZKbFbJQ-5zTJ-VYHnCB_SLsy7"
+SOURCE_FOLDER_ID = ""
+DESTINATION_FOLDER_ID = ""
 FOLDER_TYPE = "application/vnd.google-apps.folder"
 source_drive = create_instance("source")
 destination_drive = create_instance("destination")
-IGNORED_IDS = ["1kmvqVAcs5Hsl4NtUeYtB2M_2qylJAcZs", "1Oyaga3x6rZgUVKHeOyt1FR-XkWJY4A_2"]
+IGNORED_IDS = []
 
 def log_error(error_message):
     logging.error(error_message)
